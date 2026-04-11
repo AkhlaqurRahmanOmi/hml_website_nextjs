@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { GoGoal } from "react-icons/go";
 import { FaRegLightbulb } from "react-icons/fa";
 
-const fadeUp: Variants = {
+const fadeUp: any = {
   hidden: { opacity: 0, y: 40 },
   visible: (delay = 0) => ({
     opacity: 1,

@@ -1,16 +1,16 @@
 "use client";
 
-import { AnimatePresence, motion, Variants } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import HeroVideoWithFallback from "../../utils/HeroVideoWithFallback";
 import { HeroHomeStats } from "@/data/Homepage";
 import Image from "next/image";
 
-const container: Variants = {
+const container: any = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.25 } },
 };
 
-const fadeUp: Variants = {
+const fadeUp: any = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
